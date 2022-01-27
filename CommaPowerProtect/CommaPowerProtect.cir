@@ -1,0 +1,8 @@
+.title KiCad schematic
+J1 NC_01 NC_02 NC_03 Net-_J1-Pad4_ Net-_J1-Pad4_ /CAN_H NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 /CAN_L NC_11 Net-_J1-Pad16_ Conn_01x16
+Q1 Net-_Q1-Pad1_ Net-_J1-Pad16_ Net-_J2-Pad1_ SI2347DS-T1-GE3
+R1 Net-_J1-Pad16_ Net-_R1-Pad2_ 1M
+R2 Net-_R1-Pad2_ Net-_J1-Pad4_ 35k
+U1 NC_12 Net-_R1-Pad2_ Net-_Q1-Pad1_ Net-_J1-Pad16_ Net-_J1-Pad4_ TLV6703QDSERQ1
+J2 Net-_J2-Pad1_ Net-_J2-Pad1_ NC_13 Net-_J1-Pad4_ /CAN_H NC_14 /CAN_L Net-_J1-Pad4_ RJ45
+.end

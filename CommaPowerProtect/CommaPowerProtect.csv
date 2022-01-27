@@ -1,0 +1,11 @@
+Reference, Value, Footprint, Datasheet
+J1,OBD-II,OBDii:OBDii,Really hard to find. Use a Comma Power
+J2,RJ45,WE_RJ45:634008137521,https://www.mouser.com/datasheet/2/445/634008149821-1718453.pdf
+R1,9.1 M?,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,https://www.mouser.com/datasheet/2/348/ROHM_S_A0011075115_1-2563276.pdf
+R4,9.1 M?,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,https://www.mouser.com/datasheet/2/348/ROHM_S_A0011075115_1-2563276.pdf
+R2,620 k?,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf
+R6,0 ?,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,N/A. Solder Bridge
+R5,0 ?,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,N/A. Solder Bridge
+R3,RTRIM,Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical,https://www.mouser.com/datasheet/2/54/tc33-778219.pdf
+U1,TVL6703-Q1,Package_SON:Texas_PWSON-N6,https://www.ti.com/lit/ds/symlink/tlv6703-q1.pdf
+Q1,SI2347DS-T1-GE3,Package_TO_SOT_SMD:SOT-23,https://www.mouser.com/datasheet/2/427/VISH_S_A0010613203_1-2570990.pdf

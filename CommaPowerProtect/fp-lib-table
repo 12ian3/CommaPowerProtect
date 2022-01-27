@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name CommaPowerProtect)(type KiCad)(uri D:/Ian/Documents/Projects/CommaPowerProtect/PCB/CommaPowerProtect.pretty)(options "")(descr ""))
+  (lib (name OBDii)(type KiCad)(uri D:/Ian/Documents/Projects/CommaPowerProtect/PCB/OBDii.pretty)(options "")(descr ""))
+  (lib (name WE_RJ45)(type KiCad)(uri D:/Ian/Documents/Projects/CommaPowerProtect/PCB/WE_RJ45.pretty)(options "")(descr ""))
+)

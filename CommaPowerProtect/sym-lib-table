@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name TLV6703QDSERQ1)(type Legacy)(uri ${KIPRJMOD}/TLV6703QDSERQ1.lib)(options "")(descr ""))
+  (lib (name tvl6703-q1)(type Legacy)(uri ${KIPRJMOD}/tvl6703-q1.lib)(options "")(descr ""))
+)

@@ -1,0 +1,233 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x16 J1
+U 1 1 61D3C3E0
+P 1000 1750
+F 0 "J1" H 918 725 50  0000 C CNN
+F 1 "OBD-II" H 918 816 50  0000 C CNN
+F 2 "OBDii:OBDii" H 1000 1750 50  0001 C CNN
+F 3 "~" H 1000 1750 50  0001 C CNN
+	1    1000 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 61D3F2AF
+P 3400 1150
+F 0 "Q1" V 3350 1000 50  0000 C CNN
+F 1 "SI2347DS-T1-GE3" V 3350 1650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 1250 50  0001 C CNN
+F 3 "~" H 3400 1150 50  0001 C CNN
+	1    3400 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61D43545
+P 1500 1150
+F 0 "R1" H 1570 1196 50  0000 L CNN
+F 1 "9.1 M" H 1570 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1430 1150 50  0001 C CNN
+F 3 "~" H 1500 1150 50  0001 C CNN
+	1    1500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61D439C5
+P 1800 1850
+F 0 "R2" H 1870 1896 50  0000 L CNN
+F 1 "620k" H 1870 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1730 1850 50  0001 C CNN
+F 3 "~" H 1800 1850 50  0001 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1050 3600 950 
+Text Label 1200 1950 0    50   ~ 0
+CAN_H
+Text Label 1200 1150 0    50   ~ 0
+CAN_L
+Text Label 4000 1250 2    50   ~ 0
+CAN_L
+Text Label 4000 1450 2    50   ~ 0
+CAN_H
+Wire Wire Line
+	3400 1350 3400 1450
+Wire Wire Line
+	3400 1450 2750 1450
+$Comp
+L power:GND #PWR0101
+U 1 1 61D80FCA
+P 3100 2100
+F 0 "#PWR0101" H 3100 1850 50  0001 C CNN
+F 1 "GND" H 3105 1927 50  0000 C CNN
+F 2 "" H 3100 2100 50  0001 C CNN
+F 3 "" H 3100 2100 50  0001 C CNN
+	1    3100 2100
+	1    0    0    -1  
+$EndComp
+Text Label 3200 1800 0    50   ~ 0
+VCC_TO_RELAY
+Text Label 1950 950  2    50   ~ 0
+VCC_IN
+$Comp
+L Connector:RJ45 J2
+U 1 1 61D45A73
+P 4400 1450
+F 0 "J2" H 4070 1454 50  0000 R CNN
+F 1 "RJ45" H 4070 1545 50  0000 R CNN
+F 2 "WE_RJ45:634008137521" V 4400 1475 50  0001 C CNN
+F 3 "~" V 4400 1475 50  0001 C CNN
+	1    4400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 1150 3700 1150
+Wire Wire Line
+	3700 1150 3700 1550
+Wire Wire Line
+	3700 2100 3100 2100
+Connection ~ 3100 2100
+Wire Wire Line
+	4000 1550 3700 1550
+Connection ~ 3700 1550
+Wire Wire Line
+	3700 1550 3700 2100
+Wire Wire Line
+	4000 1850 4000 1800
+Wire Wire Line
+	4000 1800 3200 1800
+Wire Wire Line
+	3200 1800 3200 1050
+Connection ~ 4000 1800
+Wire Wire Line
+	4000 1800 4000 1750
+Wire Wire Line
+	1200 2050 1200 2100
+$Comp
+L Device:R R4
+U 1 1 61F1E452
+P 1650 1150
+F 0 "R4" H 1720 1196 50  0000 L CNN
+F 1 "9.1 M" H 1720 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1580 1150 50  0001 C CNN
+F 3 "~" H 1650 1150 50  0001 C CNN
+	1    1650 1150
+	1    0    0    -1  
+$EndComp
+Text Label 1200 1500 0    50   ~ 0
+CAN_L
+$Comp
+L Device:RTRIM R3
+U 1 1 61F208A2
+P 1500 1850
+F 0 "R3" H 1628 1896 50  0000 L CNN
+F 1 "RTRIM" H 1628 1805 50  0000 L CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" V 1430 1850 50  0001 C CNN
+F 3 "~" H 1500 1850 50  0001 C CNN
+	1    1500 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 2100
+Wire Wire Line
+	1200 2100 1200 2150
+$Comp
+L Device:R R6
+U 1 1 61F263FF
+P 1800 1150
+F 0 "R6" H 1870 1196 50  0000 L CNN
+F 1 "R" H 1870 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1730 1150 50  0001 C CNN
+F 3 "~" H 1800 1150 50  0001 C CNN
+	1    1800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61F26D2C
+P 1650 1850
+F 0 "R5" H 1720 1896 50  0000 L CNN
+F 1 "R" H 1720 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1580 1850 50  0001 C CNN
+F 3 "~" H 1650 1850 50  0001 C CNN
+	1    1650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 950  1500 950 
+Wire Wire Line
+	1500 1000 1500 950 
+Connection ~ 1500 950 
+Wire Wire Line
+	1500 1300 1650 1300
+Wire Wire Line
+	1650 1000 1800 1000
+Wire Wire Line
+	1200 2100 1500 2100
+Wire Wire Line
+	1500 2000 1500 2100
+Connection ~ 1500 2100
+Wire Wire Line
+	1500 1700 1650 1700
+Wire Wire Line
+	1650 2000 1800 2000
+$Comp
+L Amplifier_Difference:TVL6703-Q1 U1
+U 1 1 61F2FC35
+P 2400 1450
+F 0 "U1" H 2794 1496 50  0000 L CNN
+F 1 "TVL6703-Q1" H 2794 1405 50  0000 L CNN
+F 2 "Package_SON:Texas_PWSON-N6" H 2400 1450 50  0001 C CNN
+F 3 "" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1300 1800 1450
+Wire Wire Line
+	1500 950  2400 950 
+Wire Wire Line
+	2400 1100 2400 950 
+Connection ~ 2400 950 
+Wire Wire Line
+	2400 950  3600 950 
+Wire Wire Line
+	2300 1800 2300 1850
+Wire Wire Line
+	2300 1850 2400 1850
+Wire Wire Line
+	2500 1850 2500 1800
+Wire Wire Line
+	1500 2100 2400 2100
+Wire Wire Line
+	2400 1800 2400 1850
+Connection ~ 2400 1850
+Wire Wire Line
+	2400 1850 2500 1850
+Wire Wire Line
+	2400 1850 2400 2100
+Connection ~ 2400 2100
+Wire Wire Line
+	2400 2100 3100 2100
+Wire Wire Line
+	2050 1450 1800 1450
+Connection ~ 1800 1450
+Wire Wire Line
+	1800 1450 1800 1700
+$EndSCHEMATC
